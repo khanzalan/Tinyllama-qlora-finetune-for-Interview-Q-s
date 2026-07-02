@@ -72,11 +72,6 @@ This repo ships the **LoRA adapter** directly (`output/adapter/`) — it's small
 (~tens of MB) to live in git. Training checkpoints and the full merged model are
 git-ignored since they're large and easy to regenerate.
 
-The **full merged model** (base weights + adapter combined, ~2.2GB fp16) is hosted
-on the Hugging Face Hub instead, since GitHub isn't built for large binaries:
-
-👉 **[huggingface.co/khanzalan/tinyllama-interview-coach](https://huggingface.co/khanzalan/tinyllama-interview-coach)**
-
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
